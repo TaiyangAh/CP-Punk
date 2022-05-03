@@ -17,7 +17,7 @@ export default function Header() {
         alert("Please connect to Rinkeby");
       } else {
         let account = accounts[0];
-        let formatAccount = account.substr(0, 8) + "..." + account.substr(-4);
+        let formatAccount = account.substr(0, 6) + "..." + account.substr(-4);
         setAccounts(formatAccount);
       }
     } else {
