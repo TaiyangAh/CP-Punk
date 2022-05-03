@@ -12,7 +12,7 @@ export default function Collection({ punkList }) {
             id={punk.id}
             name={punk.name}
             traits={punk.traits}
-            img={punk.image_url}
+            image={punk.image_url}
           />
         </div>
       ))}
