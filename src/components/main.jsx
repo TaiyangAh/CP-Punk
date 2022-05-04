@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ins from "../assets/owner/instagram.png";
 import twitter from "../assets/owner/twitter.png";
-import check from "../assets/owner/check.png";
+import more from "../assets/owner/more.png";
 import "./main.css";
 
 export default function Main({ selectedPunk, punkList }) {
@@ -20,28 +20,26 @@ export default function Main({ selectedPunk, punkList }) {
 
         <div className="punkDetails" style={{ color: "white" }}>
           <div className="title">{activedPunk.name}</div>
-          <div className="id">#{activedPunk.id}</div>
+          <div className="id">#{activedPunk.token_id}</div>
         </div>
       </div>
 
       <div className="owner">
         <div className="ownerImgContainer">
-          <img src={activedPunk.image_thumbnail_url} alt="" />
+          <img src={activedPunk.owner.profile_img_url} alt="" />
+          <div className="ownerAddress">{activedPunk.owner.address}</div>
         </div>
 
-        <div className="ownerDetails">
-          <div className="nameAndHandle">
-            <span></span>
-            <div className="handler">
-              <div className="handlerContainer">
-                <img src={ins} alt="" style={{ width: "30px" }} />
-              </div>
-              <div className="handlerContainer">
-                <img src={twitter} alt="" style={{ width: "30px" }} />
-              </div>
-              <div className="handlerContainer">
-                <img src={check} alt="" style={{ width: "30px" }} />
-              </div>
+        <div className="nameAndHandle">
+          <div className="handler">
+            <div className="handlerContainer">
+              <img src={ins} alt="" style={{ width: "30px" }} />
+            </div>
+            <div className="handlerContainer">
+              <img src={twitter} alt="" style={{ width: "30px" }} />
+            </div>
+            <div className="handlerContainer">
+              <img src={more} alt="" style={{ width: "30px" }} />
             </div>
           </div>
         </div>

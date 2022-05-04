@@ -1,7 +1,9 @@
 .main{
-  margin: 10px 0;
+  padding-bottom: 30px;
+  margin: 20px 0 10px 0;
   max-height: 50vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   border-bottom: 1px solid white;
 }
@@ -17,6 +19,7 @@
 }
 .id{
   padding: 0 20px;
+  font-size: 40px;
 }
 .selectedPunk{
   object-fit: contain;
@@ -33,13 +36,14 @@
 }
 .punkDetails{
   display: flex;
-  flex-direction: column;
-  justify-content:end;
+  justify-content:top;
+  align-items: center;
   flex: 3;
 }
 
 .owner{
   display: flex;
+  justify-content: space-between;
   margin: 10px 0;
   height: 50px;
 }
@@ -48,27 +52,31 @@
 }
 
 .ownerImgContainer{
+  display: flex;
   height: 50px;
   width: 50px;
-  border-radius: 5px;
-  overflow: hidden;
+}
+.ownerAddress{
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  color: white;
 }
 .ownerImgContainer > img{
   height: 100%;
   width: 100%;
-}
-.ownerDetails{
-  display: flex;
-  align-items: center;
-  flex: 1;
+  border-radius: 50px;
+
 }
 .handler{
-  margin-top: 80px;
+  display: flex;
 }
 .handlerContainer{
   display: flex;
   background-color: #8a8a933f;
   border-radius: 50px;
+  border: 1px solid whitesmoke;
   padding: 15px;
+  margin:0 10px;
   object-fit: contain;
 }
