@@ -1,0 +1,74 @@
+.main{
+  margin: 10px 0;
+  max-height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+.mainContent{
+  display: flex;
+  padding-bottom: 20px;
+}
+.title {
+  font-size: 89px;
+  font-weight:20px;
+  padding: 0 20px;
+}
+.id{
+  padding: 0 20px;
+}
+.selectedPunk{
+  object-fit: contain;
+  max-width: min(38vw,48vw);
+  max-height: 30vh;
+  border-radius: 20px;
+}
+.punkContainer{
+  flex: 0.25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.punkDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content:end;
+  flex: 3;
+}
+
+.owner{
+  display: flex;
+  margin: 10px 0;
+  height: 50px;
+}
+.owner > div{
+  margin: 0 5px;
+}
+
+.ownerImgContainer{
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.ownerImgContainer > img{
+  height: 100%;
+  width: 100%;
+}
+.ownerDetails{
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.handler{
+  margin-top: 80px;
+}
+.handlerContainer{
+  display: flex;
+  background-color: #8a8a933f;
+  border-radius: 50px;
+  padding: 15px;
+  object-fit: contain;
+}
