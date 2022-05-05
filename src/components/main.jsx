@@ -13,34 +13,31 @@ export default function Main({ selectedPunk, punkList }) {
 
   return (
     <div className="main">
-      <div className="mainContent">
-        <div className="punkContainer">
-          <img className="selectedPunk" src={activedPunk.image_url} alt="" />
-        </div>
-
-        <div className="punkDetails" style={{ color: "white" }}>
-          <div className="title">{activedPunk.name}</div>
-          <div className="id">#{activedPunk.token_id}</div>
-        </div>
+      <div className="punkContainer">
+        <img className="selectedPunk" src={activedPunk.image_url} alt="" />
       </div>
 
-      <div className="owner">
+      <div className="punkDetails" style={{ color: "white" }}>
+        <div className="title">
+          {activedPunk.name}
+          <span className="id">#{activedPunk.token_id}</span>
+        </div>
         <div className="ownerImgContainer">
           <img src={activedPunk.owner.profile_img_url} alt="" />
           <div className="ownerAddress">{activedPunk.owner.address}</div>
         </div>
+      </div>
 
-        <div className="nameAndHandle">
-          <div className="handler">
-            <div className="handlerContainer">
-              <img src={ins} alt="" style={{ width: "30px" }} />
-            </div>
-            <div className="handlerContainer">
-              <img src={twitter} alt="" style={{ width: "30px" }} />
-            </div>
-            <div className="handlerContainer">
-              <img src={more} alt="" style={{ width: "30px" }} />
-            </div>
+      <div className="nameAndHandle">
+        <div className="handler">
+          <div className="handlerContainer">
+            <img src={ins} alt="" style={{ width: "30px" }} />
+          </div>
+          <div className="handlerContainer">
+            <img src={twitter} alt="" style={{ width: "30px" }} />
+          </div>
+          <div className="handlerContainer">
+            <img src={more} alt="" style={{ width: "30px" }} />
           </div>
         </div>
       </div>
